@@ -1,5 +1,5 @@
-import classes from "../components/modules/MealItemForm.module.css"
-import InputForm from "./InputForm";
+import classes from "../modules/MealItemForm.module.css"
+import InputForm from "../forms/InputForm";
 
 const MealsItemForm = ({ id, ...rest }) => {
     return(

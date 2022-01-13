@@ -1,4 +1,4 @@
-import classes from "./modules/Input.module.css"
+import classes from "../modules/Input.module.css"
 
 const InputForm = ({ id, label, ...rest }) => {
     return(

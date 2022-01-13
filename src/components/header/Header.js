@@ -1,13 +1,13 @@
 import React, {Fragment} from "react";
-import meals from "../components/images/meals.jpg";
-import classes from "../components/modules/Header.module.css";
+import meals from "../images/meals.jpg";
+import classes from "../modules/Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 
 const Header = () => {
     return(
        <Fragment>
            <header className={classes.header}>
-               <h1>All Meals</h1>
+               <h1>Welcome To HalfoElObaha Restaurant</h1>
                <HeaderCartButton />
            </header>
 
