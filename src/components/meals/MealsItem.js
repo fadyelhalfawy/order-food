@@ -1,9 +1,9 @@
 import classes from "../modules/MealItem.module.css";
 import MealsItemForm from "./MealsItemForm";
 
-const MealsItem = ({ id, meal }) => {
+const MealsItem = ({ meal }) => {
     return(
-        <li key={id} className={ classes.meal }>
+        <li className={ classes.meal } key={meal.id}>
             <div>
                 <h3>{ meal.name }</h3>
                 <div className={ classes.description }>{ meal.description }</div>
