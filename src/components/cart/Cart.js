@@ -10,13 +10,19 @@ const Cart = ({ onClose }) => {
     const hasItems = cartConte.items.length > 0;
     const totalAmount = `$${cartConte.totalAmount.toFixed(2)}`;
 
-    const cartItemRemove = id => {};
-    const cartItemAdd = item => {};
+    const cartItemAdd = item => {
+        cartConte.addItem(item);
+    };
 
+    const cartItemRemove = id => {
+        cartConte.removeItem(id);
+    };
+    
     const cartItems = (
         <ul className={classes['cart-items']}>
             { cartConte.items.map(item => (
-                <CartItem key={item.id}
+                <CartItem
+                    key={item.id}
                     name={item.name}
                     amount={item.amount}
                     price={item.price}
