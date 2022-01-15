@@ -31,7 +31,7 @@ const DUMMY_MEALS = [
 
 const DummyMeals = () => {
     const mealsList = DUMMY_MEALS.map(meal =>
-        <MealsItem
+        <MealsItem key={meal.id}
             meal={meal}
         /> );
 
