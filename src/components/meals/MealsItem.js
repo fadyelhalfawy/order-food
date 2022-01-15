@@ -16,7 +16,7 @@ const MealsItem = ({ meal }) => {
     };
 
     return(
-        <li className={ classes.meal } key={meal.id}>
+        <li className={ classes.meal }>
             <div>
                 <h3>{ meal.name }</h3>
                 <div className={ classes.description }>{ meal.description }</div>
